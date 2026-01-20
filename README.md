@@ -1,5 +1,7 @@
 # FROM SEMANTIC SHIFTS TO CAUSAL CUES: COUNTERFACTUAL LEARNING FOR HATEFUL MEME DETECTION
 
+![CAFT 整体框架图](framework.png)
+
 ## 🔍 Project Overview
 Memes often hide hateful content through complex interactions between images and text, making existing multimodal detectors struggle to isolate **causal features** of hateful intent (e.g., relying on spurious correlations like background images). 
 
@@ -36,8 +38,8 @@ A frozen vision-language model (CLIP vit-large-patch14) encodes:
 \mathcal{L} = \mathcal{L}_{cls} + \lambda_{cons}\mathcal{L}_{cons} + \lambda_{cont}\mathcal{L}_{cont}
 \]
 - `L_cls`: Cross-entropy loss for classification.
-- `L_cons`: Consistency loss (拉近anchor与positive samples in feature space).
-- `L_cont`: Contrastive loss (push anchor away from negative samples and in-batch negatives).
+- `L_cons`: Consistency loss.
+- `L_cont`: Contrastive loss.
 - 
 ### Interpretability Visualization
 CAFT identifies token-level causal cues (e.g., "black" and "woman" in hateful memes) and separates causal signals in feature space:
