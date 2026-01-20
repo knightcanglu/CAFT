@@ -46,7 +46,7 @@ CAFT identifies token-level causal cues (e.g., "black" and "woman" in hateful me
 
 🚀 Quick Start
 
-### 1. Environment Setup
+### Environment Setup
 ```
 # Clone the repository
 git clone https://github.com/knightcanglu/CAFT.git
