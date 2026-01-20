@@ -162,4 +162,5 @@ class CausalDeltaAttentionNet(nn.Module):
         }
         if return_explain:
             out["explain_anchor"] = explain_anchor
+
         return out
