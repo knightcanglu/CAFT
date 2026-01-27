@@ -24,7 +24,7 @@ Using a prompted LLM (Qwen2.5-VL), we generate triplets `(Anchor, Positive, Nega
 - **Negative**: Label-flipping variant (minimal edits: inject/remove hate-related expressions).
 
 ### 2. Multimodal Encoding
-A frozen vision-language model (CLIP vit-large-patch14) encodes:
+A frozen vision-language model (CLIP) encodes:
 - Global features: Pooled image/text vectors for holistic understanding.
 - Local features: Token-level text features and patch-level image features, fused via cross-modal attention.
 
